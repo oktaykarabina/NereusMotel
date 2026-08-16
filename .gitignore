@@ -1,0 +1,52 @@
+# XAMPP / WAMP / MAMP
+*.log
+*.pid
+*.lock
+
+# IDE ve Editör dosyaları
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Sistem dosyaları
+*.tmp
+*.temp
+*.cache
+*.bak
+*.old
+
+# PHP hata logları
+error_log
+php_errors.log
+
+# Kullanıcıya özel config
+config/local.php
+.env
+.env.local
+
+# Node_modules (eğer varsa)
+node_modules/
+npm-debug.log*
+
+# Composer (eğer kullanıyorsan)
+vendor/
+composer.lock
+
+# Derlenmiş dosyalar
+*.min.css
+*.min.js
+*.map
+
+# Yedekleme dosyaları
+*.zip
+*.rar
+*.tar.gz
+*.7z
+
+# Upload edilen dosyalar (genelde)
+uploads/
+tmp/
