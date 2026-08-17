@@ -1,8 +1,8 @@
 <section id="services" class="service-section">
     <div class="auto-container">
       <div class="sec-title text-center wow slideInUp">
-        <span class="sub-title">Hoexr SERVICES</span>
-        <h2>Hotel Facilities</h2>
+        <span class="sub-title">SERVİSLERİMİZ</span>
+        <h2>Otel Olanakları</h2>
       </div>
       <div class="row">
         <!-- service-block -->

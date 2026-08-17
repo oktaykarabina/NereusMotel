@@ -1,3 +1,14 @@
+<?php
+
+$nav_config = include __DIR__ . '/../config/navigation.php';
+$all_nav_items = $nav_config['nav_items'];
+
+$nav_items = array_filter($all_nav_items, function($item) {
+    return isset($item['visible']) && $item['visible'] === true;
+});
+
+?>
+
 <footer class="main-footer footer-style-one">
     <!-- Widgets Section -->
     <div class="widgets-section">
@@ -24,12 +35,15 @@
               <h4 class="widget-title">Services Links</h4>
               <div class="widget-content">
                 <ul class="user-links">
-                  <li><a href="#"><i class="fa-solid fa-crosshairs"></i>Home</a></li>
-                  <li><a href="#"><i class="fa-solid fa-crosshairs"></i>Rooms & Suites</a></li>
-                  <li><a href="#"><i class="fa-solid fa-crosshairs"></i>Restaurant</a></li>
-                  <li><a href="#"><i class="fa-solid fa-crosshairs"></i>Spa & Wellness</a></li>
-                  <li><a href="#"><i class="fa-solid fa-crosshairs"></i>About Hotel</a></li>
-                  <li><a href="#"><i class="fa-solid fa-crosshairs"></i>Contact</a></li>
+                  <?php 
+                    foreach($nav_items as $item):
+                  ?>
+                  <li>
+                    <a href="<?= $item['url'] ?>">
+                        <?= $item['title'] ?>
+                    </a>
+                  </li>
+                  <?php endforeach; ?>                  
                 </ul>
               </div>
             </div>                       
@@ -42,17 +56,26 @@
                 <!-- Recent Post -->
                 <article class="recent-post">
                   <div class="inner">
-                    <div class="post-info"><i class="fas fa-phone"></i> 1800-121-3637</div>
-                    <div class="post-info">+91-7052-101-786</div>
-                    <div class="post-info"><i class="fa fa-envelope"></i> info@example.com</div>
-                    <div class="post-info"><i class="fas fa-location"></i> 1247/Plot No. 39, 15th Phase, <br>United States of America</div>
+                    <div class="post-info">
+                      <i class="fas fa-phone"></i>
+                      +90 532 723 02 73
+                    </div>
+                    <!-- <div class="post-info">+91-7052-101-786</div> -->
+                    <div class="post-info">
+                      <i class="fa fa-envelope"></i>
+                      info@nereus.com
+                    </div> <!-- TODO: Domain sonrası güncellenecek. -->
+                    <div class="post-info">
+                      <i class="fas fa-location"></i>
+                      Yörükler Evi, 17862 Balabanlı/Ayvacık/Çanakkale
+                    </div>
                   </div>
                 </article>
               </div>
             </div>
           </div>
           <!-- footer column -->
-          <div class="footer-column col-lg-3 col-sm-6">
+          <!-- <div class="footer-column col-lg-3 col-sm-6">
             <div class="footer-widget news-widget wow fadeInLeft" data-wow-delay="400ms">
               <h4 class="widget-title">Newsletter</h4>
               <div class="text">Lorem ipsum dolor sit amet consectetur Augue id fermentum</div>
@@ -66,7 +89,7 @@
               </div>
               <div class="text"><i class="fa-regular fa-circle-check"></i>I agree to all terms and policies</div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -74,7 +97,7 @@
     <div class="footer-bottom wow slideInUp">
       <div class="auto-container">
         <div class="inner-container">
-          <div class="copyright-text">© Copyrights reserved by kodesolution.</div>.</div>
+          <!-- <div class="copyright-text">© Copyrights reserved by kodesolution.</div>.</div> -->
           <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
         </div>
       </div>

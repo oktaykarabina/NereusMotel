@@ -53,7 +53,7 @@
   <!-- End service-section -->
 
   <!-- video-section -->
-  <section class="video-section">
+  <!-- <section class="video-section">
     <div class="bg bg-image" style="background-image: url(images/background/1.jpg);"></div>
     <div class="auto-container">
       <div class="row">
@@ -75,7 +75,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- End video section -->
 
   <!-- feature-section -->
@@ -104,13 +104,13 @@
 
   <!-- news-section -->
   <?php
-    include 'inc/blog.php';
+    //include 'inc/blog.php'; // TODO: Blog aşamasına geçildiğinde geliştirilecek.
   ?>
   <!-- End news section -->
 
   <!-- BOOKING SECTION -->
   <?php
-    include 'inc/contact.php';
+    //include 'inc/contact.php';
   ?>
   <!-- BOOKING SECTION END -->
 

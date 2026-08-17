@@ -6,8 +6,8 @@
         <div class="testimonial-column col-lg-8 col-md-12">
           <div class="inner-column">
             <div class="sec-title light wow fadeInUp">
-              <span class="sub-title">What says for customer</span>
-              <h2> What Client's Say?</h2>
+              <span class="sub-title">Misafir Yorumları</span>
+              <h2>Misafirlerimiz neler söylüyor?</h2>
             </div>
             <div class="testimonial-slider wow fadeInUp">
               <div class="testimonial-slide">

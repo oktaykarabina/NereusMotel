@@ -1,7 +1,7 @@
 <section id="room" class="rooms-section pb-100">
     <div class="auto-container">
       <div class="sec-title text-center wow fadeInUp">
-        <span class="sub-title">Hoexr Luxury Rooms</span>
+        <span class="sub-title">ODALARIMIZ</span>
         <h2>Luxury Rooms & Suites</h2>
       </div>
       <div class="row">

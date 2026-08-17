@@ -3,7 +3,11 @@
       <!-- Main box -->
       <div class="main-box">
         <div class="logo-box">
-          <div class="logo"><a href="index.html"><img src="images/logo-v4-black.png" alt="" title="Tronis"></a></div>
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo-v4-black.png" alt="" title="Tronis">
+            </a>
+          </div>
         </div>
 
         <!--Nav Box-->
