@@ -19,7 +19,16 @@ $nav_items = array_filter($all_nav_items, function($item) {
             <div class="footer-widget about-widget wow fadeInLeft">
               <div class="widget-content">
                 <div class="logo"><a href="#"> <img src="images/logo-2.png" alt=""></a></div>
-                <div class="text">Welcome to the best five-star deluxe hotel in New <br>York. Hotel elementum sesue the aucan vestibulum <br>aliquam justo in sapien rutrum volutpat.</div>
+                <div class="text">
+                  <div>
+                    <span>Nereus Butik Otel | Asos</span>
+                  </div> 
+                  <div>
+                    <span>Maviyi, tarihi ve sessizliği bir arada yaşayın.</span>
+                  </div>
+                </div>
+                <div class="text">
+                </div>
                 <ul class="social-icon-two">
                   <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                   <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -32,7 +41,7 @@ $nav_items = array_filter($all_nav_items, function($item) {
           <!-- Footer Column -->
           <div class="footer-column col-lg-2 col-sm-6 mb-0">
             <div class="footer-widget links-widget wow fadeInLeft" data-wow-delay="200ms">
-              <h4 class="widget-title">Services Links</h4>
+              <h4 class="widget-title">Linkler</h4>
               <div class="widget-content">
                 <ul class="user-links">
                   <?php 
@@ -51,7 +60,7 @@ $nav_items = array_filter($all_nav_items, function($item) {
           <!-- Footer Column -->
           <div class="footer-column col-lg-3 col-sm-6">
             <div class="footer-widget info-widget wow fadeInLeft" data-wow-delay="300ms">
-              <h4 class="widget-title">Information</h4>
+              <h4 class="widget-title">İletişim</h4>
               <div class="widget-content">
                 <!-- Recent Post -->
                 <article class="recent-post">

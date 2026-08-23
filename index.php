@@ -98,7 +98,7 @@
 
   <!-- Team Section -->
   <?php
-    include 'inc/team-section.php';
+    // include 'inc/team-section.php';
   ?>
   <!-- End Team Section -->
 

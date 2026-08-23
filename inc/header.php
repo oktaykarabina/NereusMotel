@@ -4,7 +4,7 @@
       <div class="main-box">
         <div class="logo-box">
           <div class="logo">
-            <a href="index.html">
+            <a href="#home">
               <img src="images/logo-v4-black.png" alt="" title="Tronis">
             </a>
           </div>
@@ -12,27 +12,14 @@
 
         <!--Nav Box-->
         <?php include 'inc/navigation.php'; ?>
-        <!-- <div class="nav-outer">
-          <nav class="nav main-menu">
-            <ul class="navigation onepage-nav">
-              <li class="current"><a href="#home">ANASAYFA</a></li>
-              <li><a href="#about">HAKKIMIZDA</a></li>
-              <li><a href="#services">SERVİSLER</a></li>
-              <li><a href="#room">ODALAR</a></li>
-              <li><a href="#testimonial">YORUMLAR</a></li>
-              <li><a href="#news">BLOG</a></li>
-              <li><a href="#contact">İLETİŞİM</a></li>
-            </ul>
-          </nav>
-          <!-- Main Menu End
-        </div> -->
 
         <div class="outer-box">
-          <a href="page-contact.html" class="header-btn">Rezervasyon</a>
+          <!-- <a href="page-contact.html" class="header-btn">Rezervasyon</a> -->
           <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
-          <!-- Mobile Nav toggler -->
         </div>
+        <!-- Mobile Nav toggler -->
       </div>
+
       <!-- Mobile Menu  -->
       <div class="mobile-menu">
         <div class="menu-backdrop"></div>
@@ -45,9 +32,8 @@
           <ul class="navigation onepage-nav clearfix">
             <!--Keep This Empty / Menu will come through Javascript-->
           </ul>
-          <ul class="contact-list-one">
+          <!-- <ul class="contact-list-one">
             <li>
-              <!-- Contact Info Box -->
               <div class="contact-info-box">
                 <i class="icon lnr-icon-phone-handset"></i>
                 <span class="title">Call Now</span>
@@ -55,22 +41,20 @@
               </div>
             </li>
             <li>
-              <!-- Contact Info Box -->
               <div class="contact-info-box">
-                <span class="icon lnr-icon-envelope1"></span>
+                <i class="icon lnr-icon-envelope1"></i>
                 <span class="title">Send Email</span>
                 <a href="mailto:help@company.com">help@company.com</a>
               </div>
             </li>
             <li>
-              <!-- Contact Info Box -->
               <div class="contact-info-box">
-                <span class="icon lnr-icon-clock"></span>
+                <i class="icon lnr-icon-clock"></i>
                 <span class="title">Send Email</span>
                 Mon - Sat 8:00 - 6:30, Sunday - CLOSED
               </div>
             </li>
-          </ul>
+          </ul> -->
           <ul class="social-links">
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>

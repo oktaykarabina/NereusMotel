@@ -9,7 +9,10 @@
               <span class="sub-title">Misafir Yorumları</span>
               <h2>Misafirlerimiz neler söylüyor?</h2>
             </div>
-            <div class="testimonial-slider wow fadeInUp">
+            <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-bb2bc15f-fbbc-4332-ba1b-8d224e6bdde0" data-elfsight-app-lazy></div>
+            <!-- <div class="testimonial-slider wow fadeInUp">
               <div class="testimonial-slide">
                 <div class="content-box">
                   <div class="image-box" data-animation-in="fadeInLeft" data-delay-in="0.1">
@@ -85,7 +88,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
