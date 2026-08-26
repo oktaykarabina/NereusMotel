@@ -35,7 +35,7 @@ return [
         [
             'url' => '#contact',
             'title' => 'İLETİŞİM',
-            'visible' => true,
+            'visible' => false,
         ]
     ]
 ];
