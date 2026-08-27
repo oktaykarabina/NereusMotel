@@ -43,12 +43,12 @@
             <!-- <figure class="image-2 overlay-anim wow fadeInLeft"><img src="images/resource/havuz_thumnail.png" alt=""></figure> -->
             <figure class="image-4 overlay-anim wow fadeInLeft"><img src="images/resource/icon-1.png" alt=""></figure>
             <figure class="image-5 bounce-y overlay-anim wow fadeInLeft"><img src="images/resource/icon-6.png" alt=""></figure>
-            <!-- <div class="btn-box">
-              <a href="https://www.youtube.com/watch?v=Fvae8nxzVz4" class="play-now-two" data-fancybox="gallery" data-caption="">
+            <div class="btn-box">
+              <a href="images/about_video.MP4" class="play-now-two" data-fancybox="gallery" data-caption="">
                 <i class="icon fa fa-play" aria-hidden="true"></i>
                 <span class="ripple"></span>
               </a>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
