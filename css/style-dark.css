@@ -1,5 +1,5 @@
 :root {
-  --dark-color1: #171717;
+  --dark-color1: #04043f;
   --dark-color2: #222020;
   --dark-color3: #2b242b;
 }
@@ -53,7 +53,12 @@ a {
 .service-block .inner-box::before,
 .feature-row .content-column .inner-column,
 .about-section .image-column .btn-box .play-now-two,
-.testimonial-column .inner-column .testimonial-slide .content-box .image-box .thumb::before,
+.testimonial-column
+  .inner-column
+  .testimonial-slide
+  .content-box
+  .image-box
+  .thumb::before,
 .team-block .info-box,
 .booking-form-column .inner-column:before,
 .news-block .inner-box .content-box,
@@ -156,7 +161,7 @@ strong,
 
 .header-style-two .outer-box .search-btn img {
   -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 .news-section-two::before {
@@ -166,12 +171,12 @@ strong,
 .contact-form .form-group textarea {
   background-color: #0a090f;
 }
-.contact-form .form-group input:not([type=submit]) {
+.contact-form .form-group input:not([type="submit"]) {
   background-color: #0a090f;
 }
 
-.newsletter-form-three .form-group input[type=text],
-.newsletter-form-three .form-group input[type=email] {
+.newsletter-form-three .form-group input[type="text"],
+.newsletter-form-three .form-group input[type="email"] {
   background-color: rgba(22, 36, 62, 0.7);
 }
 
@@ -192,7 +197,11 @@ strong,
 }
 
 .banner-section-twelve .gradient-overlay:before {
-  background: linear-gradient(90.22deg, var(--dark-color1) 0.19%, rgba(22, 36, 62, 0) 99.81%);
+  background: linear-gradient(
+    90.22deg,
+    var(--dark-color1) 0.19%,
+    rgba(22, 36, 62, 0) 99.81%
+  );
 }
 
 .header-style-one {

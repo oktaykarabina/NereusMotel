@@ -1,38 +1,36 @@
-//Root 
+//Root
 
 :root {
-
   //Default colors
   --theme-color-light: #ffffff;
-  --theme-color-dark: #222222;
-  --theme-color-gray: #F6F6F6;
-  
+  --theme-color-dark: #04043a;
+  --theme-color-gray: #f6f6f6;
+
   //theme colors
   --theme-color1: #aa8453;
   --theme-color2: #fdece3;
   --theme-color3: #faf7f2;
   --theme-color4: #cab293;
-  
+
   --bg-theme-color1: var(--theme-color1);
   --bg-theme-color2: var(--theme-color2);
   --bg-theme-color3: var(--theme-color3);
   --bg-theme-color4: var(--theme-color4);
 
   //text heading color
-  --text-color:       #666666;
-  --headings-color:   #222222;
-  --review-color:     #ffc737;
-  --link-color:         var(--headings-color);
-  --link-hover-color:   var(--headings-color);
-
+  --text-color: #666666;
+  --headings-color: #222222;
+  --review-color: #ffc737;
+  --link-color: var(--headings-color);
+  --link-hover-color: var(--headings-color);
 
   //font family
- --title-font: 'Gilda Display', serif;
- --text-font : 'Barlow', sans-serif;
- --text-font2 : 'Barlow Condensed', sans-serif;
+  --title-font: "Gilda Display", serif;
+  --text-font: "Barlow", sans-serif;
+  --text-font2: "Barlow Condensed", sans-serif;
 
   //body
-  --body-font-size:   16px;
+  --body-font-size: 16px;
   --body-line-height: 28px;
   --body-font-weight: 400;
 
@@ -56,28 +54,27 @@
   --h6-font-weight: 400;
 
   //section sub title
-  --sec-title-subtitle-font-size:   14px;
-  --sec-title-subtitle-color:       var(--headings-color);
+  --sec-title-subtitle-font-size: 14px;
+  --sec-title-subtitle-color: var(--headings-color);
   --sec-title-subtitle-font-family: var(--text-font);
   --sec-title-subtitle-font-weight: 700;
   --sec-title-subtitle-line-height: 20px;
 
   //section title
-  --sec-title-color:        var(--headings-color);
-  --sec-title-font-size:    var(--h2-font-size);
-  --sec-title-font-family:  var(--title-font);
+  --sec-title-color: var(--headings-color);
+  --sec-title-font-size: var(--h2-font-size);
+  --sec-title-font-family: var(--title-font);
   --sec-title-font-weight: var(--h2-font-weight);
 
   //news details page
-  --theme-light-background: #F2F3F5;
+  --theme-light-background: #f2f3f5;
   --theme-light-background-text-color: var(--headings-color);
-  --theme-black:        #131313;
-
+  --theme-black: #131313;
 
   //container
   --container-width: 1200px;
   --small-container-width: 1000px;
   --large-container-width: 1760px;
-  --container-pt:    120px;
-  --container-pb:    120px;
+  --container-pt: 120px;
+  --container-pb: 120px;
 }

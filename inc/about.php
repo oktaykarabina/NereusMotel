@@ -30,7 +30,11 @@
               <div class="contact-info">
                 <div class="icon-box"><i class="flaticon-customer-service"></i></div>
                 <span>Rezarvasyon</span>
-                <h4 class="title">+90 532 723 0273</h4>
+                <h4 class="title">
+                  <a href="https://wa.me/905327230273" target="_blank">
+                    +90 532 723 0273
+                  </a>
+                </h4>
               </div>
             </div>
           </div>

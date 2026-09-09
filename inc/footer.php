@@ -18,7 +18,11 @@ $nav_items = array_filter($all_nav_items, function($item) {
           <div class="footer-column col-lg-4 col-sm-6">
             <div class="footer-widget about-widget wow fadeInLeft">
               <div class="widget-content">
-                <div class="logo"><a href="#"> <img src="images/logo-2.png" alt=""></a></div>
+                <div class="logo">
+                  <a href="#">
+                    <img src="images/logo/nereus_yatay_logo_dark_thumnail.png" alt="">
+                  </a>
+                </div>
                 <div class="text">
                   <div>
                     <span>Nereus Butik Otel | Asos</span>

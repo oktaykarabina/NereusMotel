@@ -2,22 +2,22 @@
 return [
     'banner_items' => [
         [
-            'img_url' => 'images/background/havuz_bahce_gorunum_1.jpg',
-            'title' => "Asos'un eşsiz manzarasında, huzur ve konfor bir arada.",
-            'subtitle' => "Zamansız Bir Kaçış",
+            'img_url' => 'images/banner/banner-3-test-2.png',
+            'title' => "NEREUS BUTİK MOTEL",
+            'subtitle' => "TARİH, MAVİ VE SESSİZLİK",
             'visible' => true,
         ],
         [
-            'img_url' => 'images/banner/banner-1.jpg',
-            'title' => "Nereus Butik Otel'de her an bir keşif, her nefes bir terapi.",
-            'subtitle' => "Maviyi, Tarihi ve Sessizliği Bir Arada Yaşayın",
-            'visible' => false,
+            'img_url' => 'images/banner/banner-1.png',
+            'title' => "ASOS'UN EŞSİZ MANZARASINDA, HUZUR VE KONFOR BİR ARADA",
+            'subtitle' => "ZAMANSIZ BİR KAÇIŞ",
+            'visible' => true,
         ],
         [
-            'img_url' => 'images/banner/banner-1.jpg',
-            'title' => "Nereus Butik Otel - Asos",
-            'subtitle' => "Tarih, Mavi ve Sessizlik",
-            'visible' => false,
+            'img_url' => 'images/banner/banner-2.png',
+            'title' => "NEREUS BUTİK MOTEL'DE HER AN BİR KEŞİF, HER NEFES BİR TERAPİ.",
+            'subtitle' => "MAVİYİ, TARİHİ VE SESSİZLİĞİ BİR ARADA YAŞAYIN",
+            'visible' => true,
         ],
     ]
 ];

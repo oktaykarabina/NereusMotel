@@ -5,7 +5,7 @@
         <div class="logo-box">
           <div class="logo">
             <a href="#home">
-              <img src="images/logo-v4-black.png" alt="" title="Tronis">
+              <img src="images/logo/nereus_yatay_logo_thumnail.png" alt="">
             </a>
           </div>
         </div>
@@ -26,8 +26,14 @@
         <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
         <nav class="menu-box">
           <div class="upper-box">
-            <div class="nav-logo"><a href="index.html"><img src="images/logo-2.png" alt=""></a></div>
-            <div class="close-btn"><i class="icon fa fa-times"></i></div>
+            <div class="nav-logo">
+              <a href="index.html">
+                <img src="images/logo/nereus_yatay_logo_dark_thumnail.png" alt="">
+              </a>
+            </div>
+            <div class="close-btn">
+              <i class="icon fa fa-times"></i>
+            </div>
           </div>
           <ul class="navigation onepage-nav clearfix">
             <!--Keep This Empty / Menu will come through Javascript-->
@@ -85,7 +91,9 @@
           <div class="inner-container">
             <!--Logo-->
             <div class="logo">
-              <a href="index.html"><img src="images/logo-v4-black.png" alt=""></a>
+              <a href="index.html">
+                <img src="images/logo/nereus_yatay_logo_dark_thumnail.png" alt="">
+              </a>
             </div>
             <!--Right Col-->
             <div class="nav-outer">
