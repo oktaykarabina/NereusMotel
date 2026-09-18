@@ -1384,6 +1384,7 @@ Main Header
   position: relative;
   width: 100%;
   z-index: 999;
+  background-color: var(--banner-slider-content-box-subtitle);
 }
 
 .header-top {
@@ -1470,6 +1471,7 @@ Main Header
 .main-header {
   width: 100%;
   z-index: 999;
+  background-color: var(--banner-slider-content-box-subtitle);
 }
 .main-header .logo {
   position: relative;
@@ -1818,11 +1820,11 @@ Main Header
 ***/
 .header-style-one {
   position: absolute;
-  margin-top: 18px;
 }
 .header-style-one .main-box {
   border-bottom: 1px solid #5d554f;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
+  padding-top: 12px;
 }
 .header-style-one .main-box .nav-outer {
   /* margin-right: 113px; */
