@@ -320,12 +320,6 @@ iframe {
   padding-right: 0;
 }
 
-section > .container,
-section > .container-fluid {
-  padding-top: var(--container-pt);
-  padding-bottom: var(--container-pt);
-}
-
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -4681,6 +4675,7 @@ Section Title
   font-family: var(--text-font2);
   letter-spacing: 2px;
   border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-top: 24px;
 }
 .room-block .inner-box .box-caption .book-btn:hover {
   background-color: var(--theme-color1);
@@ -4721,7 +4716,6 @@ Section Title
 }
 .room-block .inner-box .content-box .title {
   font-size: 27px;
-  margin-bottom: -6px;
   color: var(--theme-color-light);
 }
 .room-block .inner-box .content-box .price {
@@ -6830,6 +6824,20 @@ Section Title
 .recent-post .inner {
   position: relative;
 }
+.recent-post .inner .post-info {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #adadad;
+  line-height: 30px;
+  margin-bottom: 23px;
+  padding-left: 25px;
+}
 .recent-post .inner .post-info a {
   position: relative;
   display: -webkit-box;
@@ -7022,9 +7030,6 @@ Section Title
 }
 .footer-style-one .links-widget {
   margin-bottom: 50px;
-}
-.footer-style-one .links-widget li {
-  padding-left: 27px;
 }
 .footer-style-one .links-widget li a {
   color: #adadad;
@@ -10764,6 +10769,7 @@ Sidebar
 .sidebar__post .sidebar__post-list .sidebar__post-content {
   position: relative;
   top: -3px;
+  padding-inline: 24px;
 }
 .sidebar__post .sidebar__post-list .sidebar__post-content h3 {
   font-size: 18px;
@@ -11306,4 +11312,14 @@ Sidebar
 .team-contact-form textarea {
   background-color: #fff;
   height: 180px;
+}
+
+.c-modal-dialog {
+  max-width: 50% !important;
+}
+
+@media (max-width: 768px) {
+  .c-modal-dialog {
+    max-width: 100% !important;
+  }
 }

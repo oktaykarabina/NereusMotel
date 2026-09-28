@@ -5,7 +5,7 @@
         <div class="logo-box">
           <div class="logo">
             <a href="#home">
-              <img src="images/logo/nereus_yatay_logo_thumnail.png" alt="">
+              <img src="images/logo/nereus_yatay_logo_dark_thumnail.png" alt="">
             </a>
           </div>
         </div>
@@ -62,10 +62,16 @@
             </li>
           </ul> -->
           <ul class="social-links">
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li>
+              <a href="https://www.facebook.com/nereusbutikmotel/?locale=tr_TR" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/nereus.butikmotel/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
           </ul>
         </nav>
       </div><!-- End Mobile Menu -->

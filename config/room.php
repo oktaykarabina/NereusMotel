@@ -26,6 +26,10 @@ return [
                 [
                     "label" => "Televizyon",
                     "icon" => "fa-solid fa-tv"
+                ],
+                [
+                    "label" => "Bebek Yatağı",
+                    "icon" => "fa-solid fa-baby-carriage"
                 ]
             ],
             "view" => [ "Deniz Manzaralı" ],
@@ -70,6 +74,10 @@ return [
                 [
                     "label" => "Televizyon",
                     "icon" => "fa-solid fa-tv"
+                ],
+                [
+                    "label" => "Bebek Yatağı",
+                    "icon" => "fa-solid fa-baby-carriage"
                 ]
             ],
             "view" => [ "Kara Manzaralı" ],
@@ -145,7 +153,7 @@ return [
                     "price" => "Fiyat ve müsaitlik durumu için bilgi alınız.",
                 ],
             ],
-            "visible" => true,
+            "visible" => false,
         ]
     ]
 ]

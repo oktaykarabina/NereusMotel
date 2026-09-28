@@ -5,8 +5,16 @@
         <div class="content-column col-xl-6 col-lg-6 order-lg-2 wow fadeInRight" data-wow-delay="600ms">
           <div class="inner-column">
             <div class="sec-title">
-              <span class="sub-title">Nereus Butik Otel</span>
-              <h2>Asos’un Nefesinde,</h2><br><h2>Doğanın Kalbinde.</h2>
+              <span class="sub-title">
+                Nereus Butik Otel
+              </span>
+              <h2>
+                Asos’un Nefesinde,
+              </h2>
+              <br>
+              <h2>
+                Doğanın Kalbinde.
+              </h2>
               <div class="text">
                 Nereus Butik Otel, eşsiz manzarasıyla ünlü Asos Antik Kenti’nin mistik havasını, berrak Ege rüzgarlarıyla buluşturan eşsiz bir sığınak. Burada zaman, zeytin ağaçlarının gölgesinde yavaşlar; güneş, taş duvarlara vururken tarihin fısıltılarını duyarsınız. Modern yaşamın telaşından uzaklaşıp, doğanın dinginliğinde yenilenmek için ihtiyacınız olan her şey, tam da burada, Asos’a bir nefes mesafede sizi bekliyor.
               </div>
@@ -26,10 +34,10 @@
               </div>
             </div> -->
             <div class="btn-box">
-              <a href="page-about.html" class="theme-btn btn-style-one"><span class="btn-title">KEŞFEDİN</span></a>
+              <!-- <a href="page-about.html" class="theme-btn btn-style-one"><span class="btn-title">KEŞFEDİN</span></a> -->
               <div class="contact-info">
                 <div class="icon-box"><i class="flaticon-customer-service"></i></div>
-                <span>Rezarvasyon</span>
+                <span>Rezervasyon</span>
                 <h4 class="title">
                   <a href="https://wa.me/905327230273" target="_blank">
                     +90 532 723 0273

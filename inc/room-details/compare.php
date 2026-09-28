@@ -1,5 +1,5 @@
 <div class="sidebar__single sidebar__post">
-	<h3 class="sidebar__title">Oda Karşılaştırması</h3>
+	<h3 class="sidebar__title">Fiyat Bilgisi</h3>
 	<ul class="sidebar__post-list list-unstyled">
     <?php foreach($room['compare'] as $compare): ?>
 		<li>
@@ -12,7 +12,7 @@
                         <i class="far fa-door-open"></i>
                         <?= $compare['title'] ?>
                     </span> 
-                    <a href="">
+                    <a href="https://wa.me/905327230273" target="_blank">
                         <?= $compare['price'] ?>
                     </a>
 				</h3>
