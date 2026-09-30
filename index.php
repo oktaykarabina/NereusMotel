@@ -126,16 +126,27 @@
             </div>
 
             <div class="modal-body">
-                    <iframe
-        id="roomFrame"
-        src=""
-        style="width: 100%; height: 600px; border: 0;"
-    ></iframe>
+              <iframe
+                  id="roomFrame"
+                  src=""
+                  style="width: 100%; height: 600px; border: 0;"
+              ></iframe>
             </div>
 
         </div>
     </div>
 </div>
+
+<script>
+  roomModal.addEventListener('show.bs.modal', function (event) {
+      const button = event.relatedTarget;
+      const roomKey = button.dataset.room;
+  
+      const frame = document.getElementById('roomFrame');
+  
+      frame.src = `room-details.php?room=${encodeURIComponent(roomKey)}`;
+  });
+</script>
 </body>
 </html>
 

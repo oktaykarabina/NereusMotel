@@ -23,9 +23,12 @@ $service_items = array_filter($all_service_items, function ($item) {
             <div class="icon-box wow fadeInUp"><i class="<?= $item['icon'] ?>"></i></div>
             <div class="content-box">
               <h4 class="title">
-                <a href="page-service-details.html">
+                <!-- <a href="page-service-details.html">
                   <?= $item['title'] ?>
-                </a>
+                </a> -->
+                <span>
+                  <?= $item['title'] ?>
+                </span>
               </h4>
               <!-- <div class="text">
                 <?= $item['description'] ?>

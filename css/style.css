@@ -1818,7 +1818,7 @@ Main Header
   position: absolute;
 }
 .header-style-one .main-box {
-  border-bottom: 1px solid #5d554f;
+  /* border-bottom: 1px solid #5d554f; */
   padding-bottom: 12px;
   padding-top: 12px;
 }
