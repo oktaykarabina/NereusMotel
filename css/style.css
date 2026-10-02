@@ -1380,7 +1380,24 @@ Main Header
   position: relative;
   width: 100%;
   z-index: 999;
-  background-color: var(--banner-slider-content-box-subtitle);
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(4, 4, 58, 0.7),
+    rgba(4, 4, 58, 0.2),
+    transparent
+  );
+
+  pointer-events: none;
 }
 
 .header-top {
@@ -1467,7 +1484,6 @@ Main Header
 .main-header {
   width: 100%;
   z-index: 999;
-  background-color: var(--banner-slider-content-box-subtitle);
 }
 .main-header .logo {
   position: relative;
