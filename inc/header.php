@@ -38,29 +38,6 @@
           <ul class="navigation onepage-nav clearfix">
             <!--Keep This Empty / Menu will come through Javascript-->
           </ul>
-          <!-- <ul class="contact-list-one">
-            <li>
-              <div class="contact-info-box">
-                <i class="icon lnr-icon-phone-handset"></i>
-                <span class="title">Call Now</span>
-                <a href="tel:+92880098670">+92 (8800) - 98670</a>
-              </div>
-            </li>
-            <li>
-              <div class="contact-info-box">
-                <i class="icon lnr-icon-envelope1"></i>
-                <span class="title">Send Email</span>
-                <a href="mailto:help@company.com">help@company.com</a>
-              </div>
-            </li>
-            <li>
-              <div class="contact-info-box">
-                <i class="icon lnr-icon-clock"></i>
-                <span class="title">Send Email</span>
-                Mon - Sat 8:00 - 6:30, Sunday - CLOSED
-              </div>
-            </li>
-          </ul> -->
           <ul class="social-links">
             <li>
               <a href="https://www.facebook.com/nereusbutikmotel/?locale=tr_TR" target="_blank">

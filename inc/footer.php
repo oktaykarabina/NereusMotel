@@ -10,11 +10,9 @@ $nav_items = array_filter($all_nav_items, function($item) {
 ?>
 
 <footer class="main-footer footer-style-one">
-    <!-- Widgets Section -->
     <div class="widgets-section">
       <div class="auto-container">
         <div class="row">
-          <!-- Footer Column -->
           <div class="footer-column col-lg-3 col-sm-6">
             <div class="footer-widget about-widget wow fadeInLeft">
               <div class="widget-content">
@@ -46,7 +44,6 @@ $nav_items = array_filter($all_nav_items, function($item) {
               </div>
             </div>
           </div>
-          <!-- Footer Column -->
           <div class="footer-column col-lg-2 col-sm-6 mb-0">
             <div class="footer-widget links-widget wow fadeInLeft" data-wow-delay="200ms">
               <h4 class="widget-title">Linkler</h4>
@@ -66,70 +63,49 @@ $nav_items = array_filter($all_nav_items, function($item) {
             </div>                       
           </div>
           <!-- Footer Column -->
-          <div class="footer-column col-lg-3 col-sm-6">
+          <div class="footer-column col-lg-7 col-sm-6">
             <div class="footer-widget info-widget wow fadeInLeft" data-wow-delay="300ms">
               <h4 class="widget-title">İletişim</h4>
               <div class="widget-content">
-                <!-- Recent Post -->
-                <article class="recent-post">
-                  <div class="inner">
-                    <div class="post-info">
-                      <i class="fa-solid fa-phone"></i>
-                        +90 532 723 0273
-                    </div>
-                    <!-- <div class="post-info">+91-7052-101-786</div> -->
-                    <div class="post-info">
-                      <i class="fa fa-envelope"></i>
-                      <span>info@nereus.com</span>
-                    </div> <!-- TODO: Domain sonrası güncellenecek. -->
-                    <div class="post-info">
-                      <i class="fas fa-location"></i>
-                      Yörükler Evi, 17862 Balabanlı/Ayvacık/Çanakkale
-                    </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <article class="recent-post">
+                      <div class="inner">
+                        <div class="post-info">
+                          <i class="fa-solid fa-phone"></i>
+                            +90 532 723 0273
+                        </div>
+                        <div class="post-info">
+                          <i class="fa fa-envelope"></i>
+                          <span>info@nereus.com</span>
+                        </div> <!-- TODO: Domain sonrası güncellenecek. -->
+                        <div class="post-info">
+                          <i class="fas fa-location"></i>
+                          Yörükler Evi, 17862 Balabanlı/Ayvacık/Çanakkale
+                        </div>
+                      </div>
+                    </article>
                   </div>
-                </article>
+                  <div class="col-lg-6">
+                    <article class="recent-post" style="max-width: 100%;">
+                      <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.27179354374!2d26.229768375779067!3d39.48577697160435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b07957dba2ecef%3A0x5e7e023d2f69056e!2sNereus%20Butik%20Motel!5e0!3m2!1str!2str!4v1790628769556!5m2!1str!2str" 
+                        width="100%" 
+                        height="200" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="strict-origin-when-cross-origin">
+                      </iframe>
+                    </article>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="footer-column col-lg-4 col-sm-6">
-            <div class="footer-widget info-widget wow fadeInLeft" data-wow-delay="300ms">
-              <h4 class="widget-title">İletişim</h4>
-              <div class="widget-content">
-                <!-- Recent Post -->
-                <article class="recent-post" style="max-width: 100%;">
-                  <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.27179354374!2d26.229768375779067!3d39.48577697160435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b07957dba2ecef%3A0x5e7e023d2f69056e!2sNereus%20Butik%20Motel!5e0!3m2!1str!2str!4v1790628769556!5m2!1str!2str" 
-                    width="374" 
-                    height="200" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="strict-origin-when-cross-origin">
-                  </iframe>
-                </article>
-              </div>
-            </div>
-          </div>
-          <!-- footer column -->
-          <!-- <div class="footer-column col-lg-3 col-sm-6">
-            <div class="footer-widget news-widget wow fadeInLeft" data-wow-delay="400ms">
-              <h4 class="widget-title">Newsletter</h4>
-              <div class="text">Lorem ipsum dolor sit amet consectetur Augue id fermentum</div>
-              <div class="subscribe-form-three">
-                <form method="post" action="#">
-                  <div class="form-group">
-                    <input type="email" name="email" class="email" value="" placeholder="Email Address" required="">
-                    <button type="button" class="theme-btn btn-style-one"><span class="btn-title"><i class="fa fa-paper-plane"></i></span></button>
-                  </div>
-                </form>
-              </div>
-              <div class="text"><i class="fa-regular fa-circle-check"></i>I agree to all terms and policies</div>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
-    <!--  Footer Bottom -->
     <div class="footer-bottom wow slideInUp">
       <div class="auto-container">
         <div class="inner-container">
