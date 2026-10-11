@@ -3,22 +3,40 @@ return [
     'service_items' => [
         [
             "title" => "Otopark",
-            "description" => "Simdilik bos.",
+            "description" => "",
             "icon" => "flaticon-car",
             "visible" => true,
         ],
         [
             "title" => "Havuz",
-            "description" => "Simdilik bos.",
+            "description" => "",
             "icon" => "flaticon-swimming-pool",
             "visible" => true,
         ],
         [
             "title" => "Kahvaltı",
-            "description" => "Simdilik bos.",
+            "description" => "",
             "icon" => "flaticon-breakfast",
             "visible" => true,
         ],
+        [
+            "title" => "Restorant",
+            "description" => "A La Carte",
+            "icon" => "flaticon-light",
+            "visible" => true,
+        ],
+        [
+            "title" => "Toplu Organizasyonlar",
+            "description" => "Havuz Başı Davetler",
+            "icon" => "flaticon-table-2",
+            "visible" => true,
+        ],
+        [
+            "title" => "Bebek Yatağı",
+            "description" => "Bir sabit ve bir taşınabilir bebek yatağı",
+            "icon" => "flaticon-bed",
+            "visible" => true,
+        ]
     ]
 ]
 

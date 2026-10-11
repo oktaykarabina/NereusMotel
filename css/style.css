@@ -11339,3 +11339,9 @@ Sidebar
     max-width: 100% !important;
   }
 }
+
+/* local guide */
+.local-guide {
+  background: #f8f5f0;
+  padding: 120px 0;
+}

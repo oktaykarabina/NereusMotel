@@ -30,9 +30,9 @@ $service_items = array_filter($all_service_items, function ($item) {
                   <?= $item['title'] ?>
                 </span>
               </h4>
-              <!-- <div class="text">
+              <div class="text">
                 <?= $item['description'] ?>
-              </div> -->
+              </div>
             </div>
           </div>
         </div>

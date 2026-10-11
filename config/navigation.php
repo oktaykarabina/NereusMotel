@@ -23,6 +23,11 @@ return [
             'visible' => true,
         ],
         [
+            'url' => '#localGuide',
+            'title' => 'YEREL REHBER',
+            'visible' => true,
+        ],
+        [
             'url' => '#testimonial',
             'title' => 'YORUMLAR',
             'visible' => true,
