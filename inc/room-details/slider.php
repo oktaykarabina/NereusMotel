@@ -1,11 +1,13 @@
 <?php
 
-$folder = 'images/rooms/' . $room['key'];
+$folder = __DIR__ . '/../../images/rooms/' . $room['key'];
 
 $images = glob(
-    $folder . '/*.{jpg,jpeg,png,webp}',
+    $folder . '/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}',
     GLOB_BRACE
-);
+) ?: [];
+
+$imageUrlBase = 'images/rooms/' . rawurlencode($room['key']);
 
 ?>
 
@@ -13,15 +15,22 @@ $images = glob(
 
     <?php foreach ($images as $index => $image): ?>
 
+        <?php
+        $imageUrl = $imageUrlBase . '/' . rawurlencode(basename($image));
+        ?>
+
         <div class="slider-content">
 
             <figure class="image-box">
                 <a
-                    href="<?= $image ?>"
+                    href="<?= htmlspecialchars($imageUrl, ENT_QUOTES, 'UTF-8') ?>"
                     class="lightbox-image"
                     data-fancybox="gallery"
                 >
-                    <img src="<?= $image ?>" alt="">
+                    <img
+                        src="<?= htmlspecialchars($imageUrl, ENT_QUOTES, 'UTF-8') ?>"
+                        alt=""
+                    >
                 </a>
             </figure>
 
@@ -30,6 +39,11 @@ $images = glob(
 
                     <?php foreach ($images as $thumbIndex => $thumb): ?>
 
+                        <?php
+                        $thumbUrl = $imageUrlBase . '/' .
+                            rawurlencode(basename($thumb));
+                        ?>
+
                         <li class="mb-0">
                             <a
                                 class="<?= $thumbIndex === $index ? 'active' : '' ?>"
@@ -37,7 +51,10 @@ $images = glob(
                                 href="#"
                             >
                                 <figure>
-                                    <img src="<?= $thumb ?>" alt="">
+                                    <img
+                                        src="<?= htmlspecialchars($thumbUrl, ENT_QUOTES, 'UTF-8') ?>"
+                                        alt=""
+                                    >
                                 </figure>
                             </a>
                         </li>
@@ -48,5 +65,7 @@ $images = glob(
             </div>
 
         </div>
+
     <?php endforeach; ?>
+
 </div>

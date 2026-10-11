@@ -7351,8 +7351,6 @@ Section Title
 .product-details .bxslider .image-box {
   position: relative;
   display: block;
-  margin-right: 30px;
-  margin-bottom: 10px;
 }
 .product-details .bxslider .image-box img {
   width: 100%;
@@ -11344,4 +11342,14 @@ Sidebar
 .local-guide {
   background: #f8f5f0;
   padding: 120px 0;
+}
+
+/* Slider hazırlanırken içeriği gösterme */
+#roomModalBody .product-details .bxslider {
+  visibility: hidden;
+}
+
+/* BXSlider başlatıldığında görünür yap */
+#roomModalBody .product-details .bxslider.bxslider-ready {
+  visibility: visible;
 }
