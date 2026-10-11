@@ -14,7 +14,10 @@
         <?php include 'inc/navigation.php'; ?>
 
         <div class="outer-box">
-          <!-- <a href="page-contact.html" class="header-btn">Rezervasyon</a> -->
+          <a href="https://www.instagram.com/nereus.butikmotel/" target="_blank" class="header-btn">
+            <i class="fab fa-instagram"></i>
+            BİZİ TAKİP EDİN
+          </a>
           <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
         </div>
         <!-- Mobile Nav toggler -->

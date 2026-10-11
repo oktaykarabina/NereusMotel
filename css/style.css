@@ -1886,20 +1886,22 @@ header::before {
 }
 .header-style-one .outer-box .header-btn {
   text-transform: uppercase;
-  font-size: 16px;
-  border-radius: 0px;
-  line-height: 48px;
-  background-color: var(--theme-color1);
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 30px;
+  background-color: var(--banner-slider-content-box-subtitle);
   border-color: transparent;
+  border-radius: 5px;
   padding: 0;
-  width: 140px;
+  width: 120px;
   text-align: center;
-  margin-top: -8px;
   position: relative;
-  top: 5px;
-  height: 50px;
+  height: 30px;
   z-index: 9;
   border: 0;
+}
+.header-style-one .outer-box .header-btn i {
+  margin-right: 5px;
 }
 .header-style-one .outer-box .header-btn:before {
   position: absolute;
@@ -1909,7 +1911,7 @@ header::before {
   width: 100%;
   content: "";
   z-index: -1;
-  background: #000;
+  background: var(--theme-color1);
   border-radius: inherit;
   -webkit-transform: scale(0, 1);
   transform: scale(0, 1);
@@ -2360,9 +2362,26 @@ Sticky Header
     display: none;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 991px) {
+  .header-style-one .outer-box {
+    display: flex !important;
+    align-items: center !important;
+  }
   .header-style-one .outer-box .header-btn {
-    display: none;
+    text-transform: uppercase;
+    font-size: 8px;
+    border-radius: 0px;
+    line-height: 30px;
+    background-color: var(--banner-slider-content-box-subtitle);
+    border-color: transparent;
+    border-radius: 5px;
+    padding: 0;
+    width: 80px;
+    text-align: center;
+    position: relative;
+    height: 30px;
+    z-index: 9;
+    border: 0;
   }
 }
 /*** 
@@ -2379,8 +2398,7 @@ Sticky Header
   cursor: pointer;
   color: var(--theme-color1);
   display: none;
-  top: -3px;
-  margin-left: 20px;
+  margin-left: 5px;
   -webkit-box-ordinal-group: 9;
   -ms-flex-order: 8;
   order: 8;
