@@ -30,7 +30,7 @@
         <nav class="menu-box">
           <div class="upper-box">
             <div class="nav-logo">
-              <a href="index.html">
+              <a href="#home">
                 <img src="images/logo/nereus_yatay_logo_dark_thumnail.png" alt="">
               </a>
             </div>
@@ -57,6 +57,7 @@
       </div><!-- End Mobile Menu -->
 
       <!-- Header Search -->
+      <!--
       <div class="search-popup">
         <span class="search-back-drop"></span>
         <button class="close-search"><span class="fa fa-times"></span></button>
@@ -69,6 +70,7 @@
           </form>
         </div>
       </div>
+      -->
       <!-- End Header Search -->
 
       <!-- Sticky Header  -->
@@ -77,7 +79,7 @@
           <div class="inner-container">
             <!--Logo-->
             <div class="logo">
-              <a href="index.html">
+              <a href="#home">
                 <img src="images/logo/nereus_yatay_logo_dark_thumnail.png" alt="">
               </a>
             </div>
