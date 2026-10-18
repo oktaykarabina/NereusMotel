@@ -25,6 +25,11 @@ return [
         [
             'url' => '#localGuide',
             'title' => 'YEREL REHBER',
+            'visible' => false,
+        ],
+        [
+            'url' => '#foto-gallery',
+            'title' => 'Galeri',
             'visible' => true,
         ],
         [

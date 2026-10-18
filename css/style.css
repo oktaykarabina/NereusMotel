@@ -11370,3 +11370,59 @@ Sidebar
 #roomModalBody .product-details .bxslider.bxslider-ready {
   visibility: visible;
 }
+
+#foto-gallery {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.facility-image-link {
+  display: block;
+  width: 100%;
+  height: 250px; /* masaüstü yüksekliği */
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.facility-image,
+.facility-video {
+  display: block;
+  width: 100%;
+  height: 100%; /* kutuyu doldursun */
+  object-fit: cover; /* oran bozulmadan kırpsın */
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
+}
+
+.facility-image-link:hover .facility-image,
+.facility-image-link:hover .facility-video {
+  transform: scale(1.12);
+  filter: brightness(1.08);
+}
+
+.facility-image-link:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Telefon */
+@media (max-width: 575.98px) {
+  .facility-image-link {
+    height: 300px; /* telefonda istediğiniz sabit yükseklik */
+  }
+}
+
+.gallery-arrow.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.fancybox-slide--video video {
+  display: inline-block; /* block değil */
+  vertical-align: middle; /* ::before ile hizalanır */
+  max-width: 100vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
