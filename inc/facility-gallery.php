@@ -11,7 +11,9 @@ $videos = glob(
     GLOB_BRACE
 ) ?: [];
 
-$galleryUrl = '/NereusHotel/images/facility-gallery';
+$docRoot    = rtrim(str_replace('\\', '/', realpath($_SERVER['DOCUMENT_ROOT'])), '/');
+$realFolder = str_replace('\\', '/', realpath($folder));
+$galleryUrl = str_replace($docRoot, '', $realFolder);
 
 $galleryItems = array_merge(
     array_map(fn($path) => [
