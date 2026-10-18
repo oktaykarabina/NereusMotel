@@ -29,7 +29,7 @@ return [
         ],
         [
             'url' => '#foto-gallery',
-            'title' => 'Galeri',
+            'title' => 'GALERİ',
             'visible' => true,
         ],
         [
