@@ -2,7 +2,7 @@
 return [
     'banner_items' => [
         [
-            'img_url' => 'images/banner/banner-3-test-2.png',
+            'img_url' => 'images/banner/banner-3.png',
             'title' => "NEREUS BUTİK MOTEL",
             'subtitle' => "TARİH, MAVİ VE SESSİZLİK",
             'visible' => true,

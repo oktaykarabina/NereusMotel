@@ -5,7 +5,7 @@
 ?>
 
 <section id="testimonial" class="testimonial-section">
-    <div class="bg bg-image" style="background-image: url(images/background/testimonal-1.png);"></div>
+    <div class="bg bg-image" style="background-image: url(images/background/testimonal.png);"></div>
     <div class="auto-container">
       <div class="row">
         <div class="testimonial-column col-lg-8 col-md-12">
