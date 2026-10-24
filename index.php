@@ -62,6 +62,9 @@
   ?>
   <!--End Main Footer -->
 
+  <div class="scroll-to-top scroll-to-target" data-target="html">
+    <i class="fa fa-arrow-up"></i>
+  </div>
 </div><!-- End Page Wrapper -->
 <?php
   include 'inc/js-import.php';
@@ -91,9 +94,6 @@
 
         </div>
     </div>
-</div>
-<div class="scroll-to-top scroll-to-target" data-target="html">
-  <i class="fa fa-arrow-up"></i>
 </div>
 <script src="js/custom-site.js"></script>
 </body>
