@@ -95,5 +95,3 @@
 <script src="js/custom-site.js"></script>
 </body>
 </html>
-
-
