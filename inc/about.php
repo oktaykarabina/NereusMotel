@@ -9,14 +9,14 @@
                 Nereus Butik Otel
               </span>
               <h2>
-                Asos’un Nefesinde,
+                Assos’un Nefesinde,
               </h2>
               <br>
               <h2>
                 Doğanın Kalbinde.
               </h2>
               <div class="text">
-                Nereus Butik Otel, eşsiz manzarasıyla ünlü Asos Antik Kenti’nin mistik havasını, berrak Ege rüzgarlarıyla buluşturan eşsiz bir sığınak. Burada zaman, zeytin ağaçlarının gölgesinde yavaşlar; güneş, taş duvarlara vururken tarihin fısıltılarını duyarsınız. Modern yaşamın telaşından uzaklaşıp, doğanın dinginliğinde yenilenmek için ihtiyacınız olan her şey, tam da burada, Asos’a bir nefes mesafede sizi bekliyor.
+                Nereus Butik Otel, eşsiz manzarasıyla ünlü Assos Antik Kenti’nin mistik havasını, berrak Ege rüzgarlarıyla buluşturan eşsiz bir sığınak. Burada zaman, zeytin ağaçlarının gölgesinde yavaşlar; güneş, taş duvarlara vururken tarihin fısıltılarını duyarsınız. Modern yaşamın telaşından uzaklaşıp, doğanın dinginliğinde yenilenmek için ihtiyacınız olan her şey, tam da burada, Assos’a bir nefes mesafede sizi bekliyor.
               </div>
             </div>
             <!-- <div class="outer-box">

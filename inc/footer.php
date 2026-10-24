@@ -21,7 +21,7 @@ $nav_items = array_filter($all_nav_items, function($item) {
                 </div>
                 <div class="text">
                   <div>
-                    <span>Nereus Butik Otel | Asos</span>
+                    <span>Nereus Butik Motel | Assos</span>
                   </div> 
                   <div>
                     <span>Maviyi, tarihi ve sessizliği bir arada yaşayın.</span>

@@ -9,7 +9,7 @@ return [
         ],
         [
             'img_url' => 'images/banner/banner-1.png',
-            'title' => "ASOS'UN EŞSİZ MANZARASINDA, HUZUR VE KONFOR BİR ARADA",
+            'title' => "ASSOS'UN EŞSİZ MANZARASINDA, HUZUR VE KONFOR BİR ARADA",
             'subtitle' => "ZAMANSIZ BİR KAÇIŞ",
             'visible' => true,
         ],
