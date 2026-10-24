@@ -1,6 +1,6 @@
 <head>
 <meta charset="utf-8">
-<title>Nereus Butik Motel</title>
+<title>Nereus Butik Motel | Assos</title>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/flatpickr.min.css" rel="stylesheet">
