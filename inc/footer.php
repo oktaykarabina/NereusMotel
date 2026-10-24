@@ -112,10 +112,7 @@ $nav_items = array_filter($all_nav_items, function($item) {
           <div class="copyright-text">
             © Nereus Butik Motel
           </div>
-          <div class="scroll-to-top scroll-to-target" data-target="html">
-            <span class="fa fa-arrow-up"></span>
-          </div>
         </div>
       </div>
     </div>
-</footer>
+  </footer>

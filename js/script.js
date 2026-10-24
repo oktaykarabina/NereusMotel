@@ -34,7 +34,7 @@
       var sticky_header = $(".main-header .sticky-header");
       if (windowpos > 100) {
         sticky_header.addClass("fixed-header animated slideInDown");
-        scrollLink.fadeIn(300);
+        scrollLink.fadeIn(300).css("display", "flex");
       } else {
         sticky_header.removeClass("fixed-header animated slideInDown");
         scrollLink.fadeOut(300);

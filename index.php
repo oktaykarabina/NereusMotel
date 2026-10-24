@@ -92,6 +92,9 @@
         </div>
     </div>
 </div>
+<div class="scroll-to-top scroll-to-target" data-target="html">
+  <i class="fa fa-arrow-up"></i>
+</div>
 <script src="js/custom-site.js"></script>
 </body>
 </html>

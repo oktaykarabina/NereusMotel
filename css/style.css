@@ -41,6 +41,7 @@ License: copyright commercial
 @import url("tm-bs-mp.css");
 @import url("tm-utility-classes.css");
 :root {
+  --nereus-color-light: #d2ab67;
   --theme-color-light: #ffffff;
   --theme-color-dark: #04043a;
   --theme-color-gray: #f6f6f6;
@@ -594,26 +595,31 @@ figure.image {
 Scroll To Top style
 =======================*/
 .scroll-to-top {
-  width: 17px;
-  margin-top: 4px;
-  height: 17px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+  width: 48px;
+  height: 48px;
   line-height: 17px;
   color: #ffffff;
   text-align: center;
   cursor: pointer;
-  background-color: var(--theme-color-dark);
-  z-index: 100;
+  background-color: var(--nereus-color-light);
   display: none;
   border-radius: 50%;
-  color: #ffffff;
   font-size: 10px;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 .scroll-to-top:hover {
   color: #ffffff;
+}
+.scroll-to-top i {
+  font-size: 18px;
 }
 
 /*======================
