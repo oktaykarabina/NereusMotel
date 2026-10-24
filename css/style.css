@@ -3973,22 +3973,6 @@ Section Title
   transition: all 0.3s ease;
   background: #fff;
 }
-.service-block .inner-box:hover {
-  background-color: var(--theme-color-dark);
-}
-.service-block .inner-box:hover .content-box .title {
-  color: var(--theme-color-light);
-}
-.service-block .inner-box:hover .content-box .text {
-  color: var(--theme-color-light);
-}
-.service-block .inner-box:hover .icon-box {
-  -webkit-transform: rotate(-360deg);
-  transform: rotate(-360deg);
-}
-.service-block .inner-box:hover .icon-box i {
-  color: #fff;
-}
 .service-block .inner-box::before {
   content: "";
   position: absolute;
