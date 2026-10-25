@@ -11,8 +11,8 @@
         <div class="testimonial-column col-lg-8 col-md-12">
           <div class="inner-column">
             <div class="sec-title light wow fadeInUp">
-              <span class="sub-title">Misafir Yorumları</span>
-              <h2>Misafirlerimiz neler söylüyor?</h2>
+              <span class="sub-title">MİSAFİR YORUMLARI</span>
+              <h2>Misafirlerimiz Neler Söylüyor?</h2>
             </div>
             <!-- Elfsight Google Reviews | Untitled Google Reviews -->
             <script src="https://elfsightcdn.com/platform.js" async></script>

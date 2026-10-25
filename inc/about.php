@@ -6,7 +6,7 @@
           <div class="inner-column">
             <div class="sec-title">
               <span class="sub-title">
-                Nereus Butik Otel
+                NEREUS BUTİK MOTEL
               </span>
               <h2>
                 Assos’un Nefesinde,
@@ -16,7 +16,7 @@
                 Doğanın Kalbinde.
               </h2>
               <div class="text">
-                Nereus Butik Otel, eşsiz manzarasıyla ünlü Assos Antik Kenti’nin mistik havasını, berrak Ege rüzgarlarıyla buluşturan eşsiz bir sığınak. Burada zaman, zeytin ağaçlarının gölgesinde yavaşlar; güneş, taş duvarlara vururken tarihin fısıltılarını duyarsınız. Modern yaşamın telaşından uzaklaşıp, doğanın dinginliğinde yenilenmek için ihtiyacınız olan her şey, tam da burada, Assos’a bir nefes mesafede sizi bekliyor.
+                Nereus Butik Motel, eşsiz manzarasıyla ünlü Assos Antik Kenti’nin mistik havasını, berrak Ege rüzgarlarıyla buluşturan eşsiz bir sığınak. Burada zaman, zeytin ağaçlarının gölgesinde yavaşlar; güneş, taş duvarlara vururken tarihin fısıltılarını duyarsınız. Modern yaşamın telaşından uzaklaşıp, doğanın dinginliğinde yenilenmek için ihtiyacınız olan her şey, tam da burada, Assos’a bir nefes mesafede sizi bekliyor.
               </div>
             </div>
             <!-- <div class="outer-box">
