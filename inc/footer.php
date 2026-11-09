@@ -106,13 +106,4 @@ $nav_items = array_filter($all_nav_items, function($item) {
         </div>
       </div>
     </div>
-    <div class="footer-bottom wow slideInUp">
-      <div class="auto-container">
-        <div class="inner-container">
-          <div class="copyright-text">
-            © Nereus Butik Motel
-          </div>
-        </div>
-      </div>
-    </div>
   </footer>
