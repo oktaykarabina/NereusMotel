@@ -56,6 +56,12 @@
   ?>
   <!-- End testimonial section -->
 
+  <!-- Local guide -->
+  <?php 
+    include 'inc/local-guide.php';
+  ?>  
+  <!-- End local guide -->
+
   <!-- Main Footer -->
   <?php
     include 'inc/footer.php';

@@ -1,152 +1,163 @@
 document.addEventListener("DOMContentLoaded", () => {
+  //#region SLIDERS (Yerel Rehber + Galeri)
+
+  if (window.jQuery && jQuery.fn.slick) {
+    const $ = window.jQuery;
+
+    // İki slider'ın ortak ayarları
+    const baseOptions = {
+      infinite: false,
+      swipeToSlide: true,
+      edgeFriction: 0.35,
+      prevArrow:
+        '<button type="button" class="nav-arrow nav-arrow--prev" aria-label="Önceki"></button>',
+      nextArrow:
+        '<button type="button" class="nav-arrow nav-arrow--next" aria-label="Sonraki"></button>',
+    };
+
+    // Baş/son durumunu is-start / is-end sınıflarıyla işaretler (mobil peek için)
+    function bindEdge($el) {
+      function update(slick, index) {
+        $el
+          .toggleClass("is-start", index <= 0)
+          .toggleClass("is-end", index >= slick.slideCount - 1);
+      }
+      $el.on("init reInit", function (e, slick) {
+        update(slick, slick.currentSlide);
+      });
+      $el.on("beforeChange", function (e, slick, current, next) {
+        update(slick, next);
+      });
+    }
+
+    // Yerel Rehber
+    const $guideSlider = $(".local-guide-slider");
+    if ($guideSlider.length) {
+      bindEdge($guideSlider);
+      $guideSlider.slick({
+        ...baseOptions,
+        slidesToShow: 4,
+        responsive: [
+          { breakpoint: 1200, settings: { slidesToShow: 3 } },
+          { breakpoint: 992, settings: { slidesToShow: 2 } },
+          { breakpoint: 576, settings: { slidesToShow: 1, arrows: false } },
+        ],
+      });
+    }
+
+    // Galeri
+    const $gallerySlider = $(".gallery-slider");
+    if ($gallerySlider.length) {
+      bindEdge($gallerySlider);
+      $gallerySlider.slick({
+        ...baseOptions,
+        slidesToShow: 3,
+        responsive: [
+          { breakpoint: 992, settings: { slidesToShow: 2 } },
+          { breakpoint: 576, settings: { slidesToShow: 1, arrows: false } },
+        ],
+      });
+    }
+  }
+
+  //#endregion
+
   //#region ROOM DETAILS MODAL
 
   const modal = document.getElementById("roomModal");
   const modalBody = document.getElementById("roomModalBody");
 
-  let requestController = null;
+  if (modal && modalBody) {
+    let requestController = null;
 
-  modal.addEventListener("show.bs.modal", async function (event) {
-    const button = event.relatedTarget;
-    const roomKey = button?.dataset.room;
+    modal.addEventListener("show.bs.modal", async function (event) {
+      const button = event.relatedTarget;
+      const roomKey = button?.dataset.room;
 
-    if (!roomKey) {
-      modalBody.innerHTML =
-        '<div class="alert alert-warning">Oda seçilemedi.</div>';
-      return;
-    }
-
-    // Önceki istek tamamlanmadıysa iptal et.
-    if (requestController) {
-      requestController.abort();
-    }
-
-    requestController = new AbortController();
-
-    modalBody.innerHTML = `
-            <div class="text-center py-5">
-                <div class="spinner-border" role="status">
-                    <span class="visually-hidden">Yükleniyor...</span>
-                </div>
-                <p class="mt-3">Oda detayları yükleniyor...</p>
-            </div>
-        `;
-
-    try {
-      const response = await fetch(
-        `inc/room-details/main.php?room=${encodeURIComponent(roomKey)}`,
-        { signal: requestController.signal },
-      );
-
-      if (!response.ok) {
-        throw new Error("Oda detayları yüklenemedi.");
-      }
-
-      const html = await response.text();
-
-      modalBody.innerHTML = html;
-    } catch (error) {
-      if (error.name === "AbortError") {
+      if (!roomKey) {
+        modalBody.innerHTML =
+          '<div class="alert alert-warning">Oda seçilemedi.</div>';
         return;
       }
 
+      // Önceki istek tamamlanmadıysa iptal et.
+      if (requestController) {
+        requestController.abort();
+      }
+
+      requestController = new AbortController();
+
       modalBody.innerHTML = `
-                <div class="alert alert-danger">
-                    Oda detayları yüklenirken bir hata oluştu.
-                    Lütfen tekrar deneyin.
-                </div>
-            `;
+        <div class="text-center py-5">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Yükleniyor...</span>
+          </div>
+          <p class="mt-3">Oda detayları yükleniyor...</p>
+        </div>
+      `;
 
-      console.error(error);
-    }
-  });
+      try {
+        const response = await fetch(
+          `inc/room-details/main.php?room=${encodeURIComponent(roomKey)}`,
+          { signal: requestController.signal },
+        );
 
-  modal.addEventListener("hidden.bs.modal", function () {
-    if (requestController) {
-      requestController.abort();
-      requestController = null;
-    }
+        if (!response.ok) {
+          throw new Error("Oda detayları yüklenemedi.");
+        }
 
-    modalBody.innerHTML = "";
-  });
+        modalBody.innerHTML = await response.text();
+      } catch (error) {
+        if (error.name === "AbortError") {
+          return;
+        }
 
-  modal.addEventListener("shown.bs.modal", function () {
-    initRoomSlider(document.getElementById("roomModalBody"));
-  });
+        modalBody.innerHTML = `
+          <div class="alert alert-danger">
+            Oda detayları yüklenirken bir hata oluştu.
+            Lütfen tekrar deneyin.
+          </div>
+        `;
 
-  const items = Array.from(
-    document.querySelectorAll("#gallery-pages .gallery-item"),
-  );
-
-  function initRoomSlider(modalBody) {
-    if (!window.jQuery || !jQuery.fn.bxSlider) return;
-
-    const $slider = jQuery(modalBody).find(".product-details .bxslider");
-
-    if (!$slider.length || $slider.data("bxSlider")) return;
-
-    $slider.bxSlider({
-      mode: "fade",
-      auto: false,
-      speed: 700,
-      pagerCustom: jQuery(modalBody).find(
-        ".product-details .slider-pager .thumb-box",
-      ),
-      adaptiveHeight: true,
-      controls: false,
-      onSliderLoad: function () {
-        $slider.addClass("bxslider-ready");
-      },
-    });
-  }
-
-  //#endregion
-
-  //#region GALLERY SECTION
-  const prevButton = document.getElementById("gallery-prev");
-  const nextButton = document.getElementById("gallery-next");
-
-  if (!items.length || !prevButton || !nextButton) {
-    return;
-  }
-
-  // 576px altı = telefon
-  const mobileQuery = window.matchMedia("(max-width: 575.98px)");
-  const getPerPage = () => (mobileQuery.matches ? 1 : 6);
-
-  let currentPage = 0;
-
-  function showPage(page) {
-    const perPage = getPerPage();
-    const totalPages = Math.ceil(items.length / perPage);
-
-    currentPage = Math.max(0, Math.min(page, totalPages - 1));
-
-    const start = currentPage * perPage;
-    const end = start + perPage;
-
-    items.forEach((element, index) => {
-      element.classList.toggle("d-none", index < start || index >= end);
+        console.error(error);
+      }
     });
 
-    prevButton.classList.toggle("is-hidden", currentPage === 0);
-    nextButton.classList.toggle("is-hidden", currentPage === totalPages - 1);
+    modal.addEventListener("hidden.bs.modal", function () {
+      if (requestController) {
+        requestController.abort();
+        requestController = null;
+      }
+
+      modalBody.innerHTML = "";
+    });
+
+    modal.addEventListener("shown.bs.modal", function () {
+      initRoomSlider(modalBody);
+    });
+
+    function initRoomSlider(modalBody) {
+      if (!window.jQuery || !jQuery.fn.bxSlider) return;
+
+      const $slider = jQuery(modalBody).find(".product-details .bxslider");
+
+      if (!$slider.length || $slider.data("bxSlider")) return;
+
+      $slider.bxSlider({
+        mode: "fade",
+        auto: false,
+        speed: 700,
+        pagerCustom: jQuery(modalBody).find(
+          ".product-details .slider-pager .thumb-box",
+        ),
+        adaptiveHeight: true,
+        controls: false,
+        onSliderLoad: function () {
+          $slider.addClass("bxslider-ready");
+        },
+      });
+    }
   }
-
-  prevButton.addEventListener("click", (event) => {
-    event.preventDefault();
-    showPage(currentPage - 1);
-  });
-
-  nextButton.addEventListener("click", (event) => {
-    event.preventDefault();
-    showPage(currentPage + 1);
-  });
-
-  // Ekran boyutu değişince (telefon <-> masaüstü, döndürme) başa dön
-  mobileQuery.addEventListener("change", () => showPage(0));
-
-  showPage(0);
 
   //#endregion
 });

@@ -23,11 +23,6 @@ return [
             'visible' => true,
         ],
         [
-            'url' => '#localGuide',
-            'title' => 'YEREL REHBER',
-            'visible' => false,
-        ],
-        [
             'url' => '#foto-gallery',
             'title' => 'GALERİ',
             'visible' => true,
@@ -35,6 +30,11 @@ return [
         [
             'url' => '#testimonial',
             'title' => 'YORUMLAR',
+            'visible' => true,
+        ],
+        [
+            'url' => '#localGuide',
+            'title' => 'GEZİLECEK YERLER',
             'visible' => true,
         ],
         [
