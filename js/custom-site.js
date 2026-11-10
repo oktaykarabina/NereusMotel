@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  //#region SLIDERS (Yerel Rehber + Galeri)
+  //#region SLIDERS (Yerel Rehber + Galeri + Servisler)
 
   if (window.jQuery && jQuery.fn.slick) {
     const $ = window.jQuery;
@@ -60,6 +60,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // Servisler (sadece mobil)
+  const $serviceSlider = $(".service-slider");
+  if ($serviceSlider.length) {
+    bindEdge($serviceSlider);
+      $serviceSlider.slick({
+        mobileFirst: true,   // breakpoint'ler min-width gibi çalışır
+        slidesToShow: 1,
+        arrows: false,
+        dots: false,
+        infinite: false,
+        swipeToSlide: true,
+        edgeFriction: 0.35,
+        responsive: [
+          { breakpoint: 576, settings: "unslick" }, // 576px ve üstü: normal grid
+        ],
+      });
+  }
+  
   //#endregion
 
   //#region ROOM DETAILS MODAL
