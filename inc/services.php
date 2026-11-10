@@ -15,7 +15,7 @@ $service_items = array_filter($all_service_items, function ($item) {
         <span class="sub-title">SERVİSLERİMİZ</span>
         <h2>Otel Olanakları</h2>
       </div>
-      <div class="row">
+      <div class="row service-slider peek-slider">
         <!-- service-block -->
         <?php foreach ($service_items as $item): ?>
         <div class="service-block col-lg-4 col-md-6 col-sm-12">
