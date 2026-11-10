@@ -11669,6 +11669,42 @@ Sidebar
 }
 
 /* =========================================
+   SERVİSLER (mobilde slider)
+   ========================================= */
+@media (max-width: 575px) {
+  /* Bootstrap .row'un flex ve negatif margin'i slider'ı bozmasın */
+  .service-slider.slick-initialized {
+    display: block;
+    margin: 0;
+  }
+
+  /* Eşit yükseklik */
+  .service-slider .slick-track {
+    display: flex !important;
+  }
+
+  .service-slider .slick-slide {
+    height: auto;
+    display: flex !important;
+  }
+
+  .service-slider .slick-slide > div {
+    width: 100%;
+    height: 100%;
+  }
+
+  .service-slider .service-block {
+    width: 100%;
+    height: 100%;
+    padding: 0 8px; /* kartlar arası boşluk */
+  }
+
+  .service-slider .inner-box {
+    height: 100%;
+  }
+}
+
+/* =========================================
    MOBİL: tek kart + peek (en sonda kalmalı)
    ========================================= */
 @media (max-width: 575px) {
