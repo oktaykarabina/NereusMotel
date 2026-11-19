@@ -4790,7 +4790,7 @@ Section Title
   background-color: #f5f6f7;
   border: 1px solid var(--theme-color1);
   border-radius: 10px;
-  padding: 43px 50px 30px 50px;
+  padding: 20px 20px 20px 20px;
   position: relative;
   z-index: 1;
 }
@@ -10737,7 +10737,7 @@ Sidebar
 .sidebar__post {
   position: relative;
   display: block;
-  padding: 46px 30px 30px;
+  padding: 20px 20px 20px;
   color: var(--theme-light-background-text-color);
   background-color: var(--theme-light-background);
   border-radius: 10px;
@@ -10777,6 +10777,7 @@ Sidebar
   }
 }
 .sidebar__post .sidebar__post-list li:hover {
+  padding: 20px 0px 20px 0px;
   background-color: #ffffff;
   border-radius: 10px;
 }
