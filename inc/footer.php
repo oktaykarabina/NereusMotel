@@ -77,8 +77,8 @@ $nav_items = array_filter($all_nav_items, function($item) {
                         </div>
                         <div class="post-info">
                           <i class="fa fa-envelope"></i>
-                          <span>info@nereus.com</span>
-                        </div> <!-- TODO: Domain sonrası güncellenecek. -->
+                          <span>info@nereusmotel.com</span>
+                        </div>
                         <div class="post-info">
                           <i class="fas fa-location"></i>
                           Yörükler Evi, 17862 Balabanlı/Ayvacık/Çanakkale
