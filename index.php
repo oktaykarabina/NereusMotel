@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <?php 
   include 'inc/head.php' 
 ?>
